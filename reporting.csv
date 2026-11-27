@@ -1,0 +1,8 @@
+Field,RequiredForValidCase,StudentEntry,SourceEvidence
+Identifiable patient,Yes,"Yes. Age recorded for all 18 cases (range 23-79); sex: Female 6, Male 4, Unknown 8. Initials not supplied (unknown).","intake_cases.csv: Age, Sex"
+Identifiable reporter,Yes,"Yes (category only). Consumer 3, Pharmacist 5, Physician 10. Name, contact and country unknown.",intake_cases.csv: Reporter
+Suspect product,Yes,"Yes. 8 distinct products with dose and route (all oral). Start date, batch and manufacturer unknown.","intake_cases.csv: SuspectProduct, Dose, Route"
+Adverse event,Yes,"Yes. 8 distinct reaction terms, one per case, verbatim (not MedDRA-coded).","intake_cases.csv: Reaction, Narrative"
+Chronology,No,"Partly complete. Onset in days after drug start for all cases (range 2-21). Reaction start date, stop date and duration unknown.","intake_cases.csv: OnsetDays, Narrative"
+Seriousness,No,"Complete as supplied. Hospitalisation 7, medically important 7, not serious 4. Severity unknown.",intake_cases.csv: Seriousness
+Outcome,No,"Complete from narrative. Recovered 4, recovering 9, not recovered 5. Outcome dates unknown.",intake_cases.csv: Narrative
